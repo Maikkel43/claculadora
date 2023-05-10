@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js"></script>
+</head>
+<body>
+    <table>
+        <tr class="enunciados">
+            <td colspan="4" class="tittle">OPERACIONES BASICAS</td>
+        </tr>
+        <tr>
+            <td class="operaciones"><input type="radio" id="suma" class="radio" name="operacion"> Suma</td>
+            <td class="operaciones"> <input type="radio" id="resta" class="radio" name="operacion"> Resta </td>
+            <td class="operaciones"> <input type="radio" id="multi" class="radio" name="operacion"> Multiplicacion</td>
+            <td class="operaciones"> <input type="radio" id="div" class="radio" name="operacion"> Division</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="number">Ingrese el valor 1:</td>
+            <td class="casilla"><input type="text" id="d1" class="ingreso"></td>
+            <td><input type="button" value="Ver Resultados" class="botones" onclick="verResultados()"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="number">Ingrese el valor 2:</td>
+            <td class="casilla"><input type="text" id="d2" class="ingreso"></td>
+            <td><input type="reset" value="Borrar Datos" class="botones" onclick="reiniciar()"></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="enunciados" id="muestras"></td>
+            <td><input type="button" value="Obtener Resultado" id="proceso" onclick="calcular()" class="botones"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="enunciados">RESULTADO: </td>
+            <td colspan="2" id="resultado" class="resultado"></td>
+        </tr>
+    </table>
+</body>
+</html>
